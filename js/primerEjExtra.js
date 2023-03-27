@@ -22,4 +22,4 @@ document.write(`<li>${persona.hobbies}</li>`)
 }
 }
 document.write(`<p>${persona.hobbies}<p/>`)
-console.log()
+console.log(persona);
