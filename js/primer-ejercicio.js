@@ -25,7 +25,7 @@ let auto = {
    }
 }
 console.log(auto);
-
+//mostarr por pantalla
 for(){
 
 }
