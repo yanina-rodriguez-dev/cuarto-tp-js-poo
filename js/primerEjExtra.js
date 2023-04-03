@@ -17,8 +17,8 @@ let persona = {
 modifHobbies: function(){
     array.forEach(hobbie=>{
         
+        document.write(`<li>${persona.hobbies}</li>`)
     });
-document.write(`<li>${persona.hobbies}</li>`)
 }
 }
 document.write(`<p>${persona.hobbies}<p/>`)
