@@ -3,9 +3,9 @@
 Posteriormente, cree tres instancias de este objeto y guárdalas en un array.
 Por último, utilice el método imprime datos para mostrar por pantalla los valores de los tres objetos instanciados.
 */
-
+//crear clase, protoripo del cual se van a crear los objetos
 class Producto {
-    
+
     //metodo contrstructor
  constructor(paramCodigo, paramNombre, paramPrecio) {
     //propiedades
