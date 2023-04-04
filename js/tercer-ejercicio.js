@@ -34,6 +34,7 @@ class Rectangulo {
 }
 //nuevo objeto rectangulo
 let rectangulo1 = new Rectangulo(10, 20);
+//Mostrar
 console.log(rectangulo1.mostrarPropiedades());
 //asigno valores para mostrar 
 rectangulo1.modificarAlto(15);
