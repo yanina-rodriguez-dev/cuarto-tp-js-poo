@@ -14,10 +14,10 @@ Saldo: 0,
 //METODOS:
     // Un método ingresar() que permita añadir dinero a la cuenta, pasando la cantidad como parámetro
 Ingresar: function(cantidad){
- this.Saldo += cantidad
+ this.Saldo += cantidad;
 },
 //Un método extraer() que permita retirar la cantidad pasada como parámetro.
-Extraer:(cantidad)=>{
+Extraer:function(cantidad){
     if(cantidad <=this.Saldo){
         this.Saldo -= cantidad;
     }else{
@@ -37,6 +37,8 @@ console.log(cuenta);
 console.log(cuenta.Informar());
 Ingresar(500);
 Extraer(20);
-Informar();
+console.log(cuenta.Ingresar(5000));
+cuenta.Extraer(300);
+
 console.log(cuenta.Informar());
-document.write(`Titular:${cuenta.Titular} el saldo que posee en su cuenta es: ${cuenta.Saldo}`)
+//document.write(`Titular:${cuenta.Titular} el saldo que posee en su cuenta es: ${cuenta.Saldo}`)
