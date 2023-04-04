@@ -12,14 +12,31 @@ let cuenta = {
 Titular: 'Alex',
 Saldo: 0,
 //METODOS:
-Ingresar: (cantidad)=>{
-let cantidad = document.write( this.Saldo + cantidad);
+    // Un método ingresar() que permita añadir dinero a la cuenta, pasando la cantidad como parámetro
+Ingresar: function(cantidad){
+ this.Saldo += cantidad
 },
-Extraer:(numero)=>{
-    let numero = document
+//Un método extraer() que permita retirar la cantidad pasada como parámetro.
+Extraer:(cantidad)=>{
+    if(cantidad <=this.Saldo){
+        this.Saldo -= cantidad;
+    }else{
+       console.log('El saldo es insuficiente') 
+    }
 
 },
-Informar:()=>{
 
+//Un método informar() que retorne la información del estado de la cuenta. 
+Informar:function(){
+return(`Titular:${this.Titular} el saldo que posee en su cuenta es: ${this.Saldo}`)
+},
 }
-}
+
+//MOSTRAR POR CONSOLA 
+console.log(cuenta);
+console.log(cuenta.Informar());
+Ingresar(500);
+Extraer(20);
+Informar();
+console.log(cuenta.Informar());
+document.write(`Titular:${cuenta.Titular} el saldo que posee en su cuenta es: ${cuenta.Saldo}`)
